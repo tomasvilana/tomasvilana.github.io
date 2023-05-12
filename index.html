@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+
+    * {margin: 0; padding: 0;}
+
+    body {background-color: #111;}
+
+    #relleno {width: 100%;  height: 50px;}
+    
+
+    #topnav {background-color: orange;  overflow: hidden;
+             position: fixed; width: 100%;}
+
+    #topnav a {float: left; color: black; text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
+
+    #topnav a:hover {background-color: #ddd; color: black;}
+
+    #topnav a.active {background-color: #04aa6d; color: white;} 
+
+    #row {display: flex; height: 550px; overflow: hidden; scrollbar-width: auto;}
+
+    #left {flex: 20%; padding: 15px;
+           background-color: yellowgreen;
+           overflow: scroll; scrollbar-color: royalblue;}
+
+        #left hr {margin: 20px;}
+
+    #center {flex: 80%; background-color: white;
+             position: relative;}
+
+      #myImage {height: 80%;}
+
+      #myAudio {width: 80%;
+                position: absolute;
+                 bottom: 10px;
+                 left: 10px;}
+
+
+    button {border: 0;padding: 6px 6px;font-size: 16px; 
+          margin: 5px;background-color: #333; color: #fff;
+          width: 70px; height: 30px;
+          border-radius: 5px;}
+
+    footer {background-color: maroon; height: 50px;
+            text-align: center;}
+
+    footer p {color: white; padding-top: 15px; font-size: 12px;}
+
+  </style>
+  <title>tomas vilana</title>
+</head>
+<body>
+
+  <div id="topnav">
+    <a class="active" href="#home">home</a>
+    <a href="#piano">piano</a>
+    <a href="#guitarra">guitarra</a>
+    <a href="#juegos">juegos</a>
+    <a href="#teoria">teoria</a>
+    <a href="reproducir">reproducir</a>
+  </div>
+
+  <div id="relleno"></div>
+
+  <div id="row">
+    <div id="left">
+
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/a1.png'; document.getElementById('myAudio').src = 'mp3/a1.mp3';">a1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/a2.png'; document.getElementById('myAudio').src = 'mp3/a2.mp3';">a2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/a3.png'; document.getElementById('myAudio').src = 'mp3/a3.mp3';">a3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/a4.png'; document.getElementById('myAudio').src = 'mp3/a4.mp3';">a4</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/aag.png'; document.getElementById('myAudio').src = 'mp3/aag.mp3';">aag</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/abdmr.png'; document.getElementById('myAudio').src = 'mp3/abdmr.mp3';">abdmr</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/abh.png'; document.getElementById('myAudio').src = 'mp3/abh.mp3';">abh</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ac.png'; document.getElementById('myAudio').src = 'mp3/ac.mp3';">ac</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ada.png'; document.getElementById('myAudio').src = 'mp3/ada.mp3';">ada</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/adip.png'; document.getElementById('myAudio').src = 'mp3/adip.mp3';">adip</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/aib.png'; document.getElementById('myAudio').src = 'mp3/aib.mp3';">aib</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ailh.png'; document.getElementById('myAudio').src = 'mp3/ailh.mp3';">ailh</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ailif.png'; document.getElementById('myAudio').src = 'mp3/ailif.mp3';">ailif</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/am.png'; document.getElementById('myAudio').src = 'mp3/am.mp3';">am</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/aps.png'; document.getElementById('myAudio').src = 'mp3/aps.mp3';">aps</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ate.png'; document.getElementById('myAudio').src = 'mp3/ate.mp3';">ate</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/atl.png'; document.getElementById('myAudio').src = 'mp3/atl.mp3';">atl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/atu.png'; document.getElementById('myAudio').src = 'mp3/atu.mp3';">atu</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/atwts.png'; document.getElementById('myAudio').src = 'mp3/atwts.mp3';">atwts</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/aywi.png'; document.getElementById('myAudio').src = 'mp3/aywi.mp3';">aywi</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/b1.png'; document.getElementById('myAudio').src = 'mp3/b1.mp3';">b1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/b2.png'; document.getElementById('myAudio').src = 'mp3/b2.mp3';">b2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bc.png'; document.getElementById('myAudio').src = 'mp3/bc.mp3';">bc</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bcts.png'; document.getElementById('myAudio').src = 'mp3/bcts.mp3';">bcts</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bd.png'; document.getElementById('myAudio').src = 'mp3/bd.mp3';">bd</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bj.png'; document.getElementById('myAudio').src = 'mp3/bj.mp3';">bj</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bm1.png'; document.getElementById('myAudio').src = 'mp3/bm1.mp3';">bm1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bm2.png'; document.getElementById('myAudio').src = 'mp3/bm2.mp3';">bm2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bmw.png'; document.getElementById('myAudio').src = 'mp3/bmw.mp3';">bmw</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bobd.png'; document.getElementById('myAudio').src = 'mp3/bobd.mp3';">bobd</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bp.png'; document.getElementById('myAudio').src = 'mp3/bp.mp3';">bp</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bpt.png'; document.getElementById('myAudio').src = 'mp3/bpt.mp3';">bpt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/bs.png'; document.getElementById('myAudio').src = 'mp3/bs.mp3';">bs</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/btb.png'; document.getElementById('myAudio').src = 'mp3/btb.mp3';">btb</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/btl.png'; document.getElementById('myAudio').src = 'mp3/btl.mp3';">btl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/btn.png'; document.getElementById('myAudio').src = 'mp3/btn.mp3';">btn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/byam.png'; document.getElementById('myAudio').src = 'mp3/byam.mp3';">byam</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/byn.png'; document.getElementById('myAudio').src = 'mp3/byn.mp3';">byn</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/c1.png'; document.getElementById('myAudio').src = 'mp3/c1.mp3';">c1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/c2.png'; document.getElementById('myAudio').src = 'mp3/c2.mp3';">c2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/c3.png'; document.getElementById('myAudio').src = 'mp3/c3.mp3';">c3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/c4.png'; document.getElementById('myAudio').src = 'mp3/c4.mp3';">c4</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/cao.png'; document.getElementById('myAudio').src = 'mp3/cao.mp3';">cao</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/caya.png'; document.getElementById('myAudio').src = 'mp3/caya.mp3';">caya</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/cdac.png'; document.getElementById('myAudio').src = 'mp3/cdac.mp3';">cdac</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/cdlv.png'; document.getElementById('myAudio').src = 'mp3/cdlv.mp3';">cdlv</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ce.png'; document.getElementById('myAudio').src = 'mp3/ce.mp3';">ce</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/cetm.png'; document.getElementById('myAudio').src = 'mp3/cetm.mp3';">cetm</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ceub.png'; document.getElementById('myAudio').src = 'mp3/ceub.mp3';">ceub</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/cg.png'; document.getElementById('myAudio').src = 'mp3/cg.mp3';">cg</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ch.png'; document.getElementById('myAudio').src = 'mp3/ch.mp3';">ch</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/clal.png'; document.getElementById('myAudio').src = 'mp3/clal.mp3';">clal</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/clll.png'; document.getElementById('myAudio').src = 'mp3/clll.mp3';">clll</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/clp.png'; document.getElementById('myAudio').src = 'mp3/clp.mp3';">clp</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/cs.png'; document.getElementById('myAudio').src = 'mp3/cs.mp3';">cs</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ct.png'; document.getElementById('myAudio').src = 'mp3/ct.mp3';">ct</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ctw.png'; document.getElementById('myAudio').src = 'mp3/ctw.mp3';">ctw</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/cty.png'; document.getElementById('myAudio').src = 'mp3/cty.mp3';">cty</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/d1.png'; document.getElementById('myAudio').src = 'mp3/d1.mp3';">d1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/d2.png'; document.getElementById('myAudio').src = 'mp3/d2.mp3';">d2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/d3.png'; document.getElementById('myAudio').src = 'mp3/d3.mp3';">d3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dac.png'; document.getElementById('myAudio').src = 'mp3/dac.mp3';">dac</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dald.png'; document.getElementById('myAudio').src = 'mp3/dald.mp3';">dald</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dc1.png'; document.getElementById('myAudio').src = 'mp3/dc1.mp3';">dc1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dc2.png'; document.getElementById('myAudio').src = 'mp3/dc2.mp3';">dc2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ditw.png'; document.getElementById('myAudio').src = 'mp3/ditw.mp3';">ditw</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dlv.png'; document.getElementById('myAudio').src = 'mp3/dlv.mp3';">dlv</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/do.png'; document.getElementById('myAudio').src = 'mp3/do.mp3';">do</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dowar.png'; document.getElementById('myAudio').src = 'mp3/dowar.mp3';">dowar</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dqej.png'; document.getElementById('myAudio').src = 'mp3/dqej.mp3';">dqej</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dsb.png'; document.getElementById('myAudio').src = 'mp3/dsb.mp3';">dsb</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dsn.png'; document.getElementById('myAudio').src = 'mp3/dsn.mp3';">dsn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/dwbh.png'; document.getElementById('myAudio').src = 'mp3/dwbh.mp3';">dwbh</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/e1.png'; document.getElementById('myAudio').src = 'mp3/e1.mp3';">e1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/e2.png'; document.getElementById('myAudio').src = 'mp3/e2.mp3';">e2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ebdlc.png'; document.getElementById('myAudio').src = 'mp3/ebdlc.mp3';">ebdlc</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ecdt.png'; document.getElementById('myAudio').src = 'mp3/ecdt.mp3';">ecdt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ecem.png'; document.getElementById('myAudio').src = 'mp3/ecem.mp3';">ecem</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ed.png'; document.getElementById('myAudio').src = 'mp3/ed.mp3';">ed</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/edqmq.png'; document.getElementById('myAudio').src = 'mp3/edqmq.mp3';">edqmq</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/eemdsb.png'; document.getElementById('myAudio').src = 'mp3/eemdsb.mp3';">eemdsb</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ef.png'; document.getElementById('myAudio').src = 'mp3/ef.mp3';">ef</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/efds.png'; document.getElementById('myAudio').src = 'mp3/efds.mp3';">efds</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ehdp.png'; document.getElementById('myAudio').src = 'mp3/ehdp.mp3';">ehdp</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/einy.png'; document.getElementById('myAudio').src = 'mp3/einy.mp3';">einy</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/eits.png'; document.getElementById('myAudio').src = 'mp3/eits.mp3';">eits</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/el.png'; document.getElementById('myAudio').src = 'mp3/el.mp3';">el</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/elt.png'; document.getElementById('myAudio').src = 'mp3/elt.mp3';">elt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/epm.png'; document.getElementById('myAudio').src = 'mp3/epm.mp3';">epm</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ept.png'; document.getElementById('myAudio').src = 'mp3/ept.mp3';">ept</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/et.png'; document.getElementById('myAudio').src = 'mp3/et.mp3';">et</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/eusm.png'; document.getElementById('myAudio').src = 'mp3/eusm.mp3';">eusm</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/f1.png'; document.getElementById('myAudio').src = 'mp3/f1.mp3';">f1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/f2.png'; document.getElementById('myAudio').src = 'mp3/f2.mp3';">f2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/f3.png'; document.getElementById('myAudio').src = 'mp3/f3.mp3';">f3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/feea.png'; document.getElementById('myAudio').src = 'mp3/feea.mp3';">feea</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/feef.png'; document.getElementById('myAudio').src = 'mp3/feef.mp3';">feef</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/fil.png'; document.getElementById('myAudio').src = 'mp3/fil.mp3';">fil</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/fy.png'; document.getElementById('myAudio').src = 'mp3/fy.mp3';">fy</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/g1.png'; document.getElementById('myAudio').src = 'mp3/g1.mp3';">g1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/g2.png'; document.getElementById('myAudio').src = 'mp3/g2.mp3';">g2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/galb.png'; document.getElementById('myAudio').src = 'mp3/galb.mp3';">galb</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/gd.png'; document.getElementById('myAudio').src = 'mp3/gd.mp3';">gd</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/gdt.png'; document.getElementById('myAudio').src = 'mp3/gdt.mp3';">gdt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ggoh.png'; document.getElementById('myAudio').src = 'mp3/ggoh.mp3';">ggoh</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/gomm.png'; document.getElementById('myAudio').src = 'mp3/gomm.mp3';">gomm</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/hbts.png'; document.getElementById('myAudio').src = 'mp3/hbts.mp3';">hbts</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/hbty.png'; document.getElementById('myAudio').src = 'mp3/hbty.mp3';">hbty</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/hc.png'; document.getElementById('myAudio').src = 'mp3/hc.mp3';">hc</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/hcts.png'; document.getElementById('myAudio').src = 'mp3/hcts.mp3';">hcts</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/hh.png'; document.getElementById('myAudio').src = 'mp3/hh.mp3';">hh</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/hityl.png'; document.getElementById('myAudio').src = 'mp3/hityl.mp3';">hityl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/hl.png'; document.getElementById('myAudio').src = 'mp3/hl.mp3';">hl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ht.png'; document.getElementById('myAudio').src = 'mp3/ht.mp3';">ht</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/hwnn.png'; document.getElementById('myAudio').src = 'mp3/hwnn.mp3';">hwnn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/hyestr.png'; document.getElementById('myAudio').src = 'mp3/hyestr.mp3';">hyestr</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/i1.png'; document.getElementById('myAudio').src = 'mp3/i1.mp3';">i1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/i2.png'; document.getElementById('myAudio').src = 'mp3/i2.mp3';">i2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/iar.png'; document.getElementById('myAudio').src = 'mp3/iar.mp3';">iar</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ibicf.png'; document.getElementById('myAudio').src = 'mp3/ibicf.mp3';">ibicf</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/icd.png'; document.getElementById('myAudio').src = 'mp3/icd.mp3';">icd</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/iiap.png'; document.getElementById('myAudio').src = 'mp3/iiap.mp3';">iiap</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/imhbl.png'; document.getElementById('myAudio').src = 'mp3/imhbl.mp3';">imhbl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/in.png'; document.getElementById('myAudio').src = 'mp3/in.mp3';">in</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/intoo.png'; document.getElementById('myAudio').src = 'mp3/intoo.mp3';">intoo</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/iny.png'; document.getElementById('myAudio').src = 'mp3/iny.mp3';">iny</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ira.png'; document.getElementById('myAudio').src = 'mp3/ira.mp3';">ira</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ishf.png'; document.getElementById('myAudio').src = 'mp3/ishf.mp3';">ishf</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/it.png'; document.getElementById('myAudio').src = 'mp3/it.mp3';">it</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/itat.png'; document.getElementById('myAudio').src = 'mp3/itat.mp3';">itat</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/itl.png'; document.getElementById('myAudio').src = 'mp3/itl.mp3';">itl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/itmh.png'; document.getElementById('myAudio').src = 'mp3/itmh.mp3';">itmh</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/itn.png'; document.getElementById('myAudio').src = 'mp3/itn.mp3';">itn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/iwys.png'; document.getElementById('myAudio').src = 'mp3/iwys.mp3';">iwys</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/j1.png'; document.getElementById('myAudio').src = 'mp3/j1.mp3';">j1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/jaerde.png'; document.getElementById('myAudio').src = 'mp3/jaerde.mp3';">jaerde</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/jta.png'; document.getElementById('myAudio').src = 'mp3/jta.mp3';">jta</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/jttou.png'; document.getElementById('myAudio').src = 'mp3/jttou.mp3';">jttou</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/kohd.png'; document.getElementById('myAudio').src = 'mp3/kohd.mp3';">kohd</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/l1.png'; document.getElementById('myAudio').src = 'mp3/l1.mp3';">l1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lbv.png'; document.getElementById('myAudio').src = 'mp3/lbv.mp3';">lbv</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lc.png'; document.getElementById('myAudio').src = 'mp3/lc.mp3';">lc</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lcd.png'; document.getElementById('myAudio').src = 'mp3/lcd.mp3';">lcd</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lcmb.png'; document.getElementById('myAudio').src = 'mp3/lcmb.mp3';">lcmb</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ld1.png'; document.getElementById('myAudio').src = 'mp3/ld1.mp3';">ld1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ld2.png'; document.getElementById('myAudio').src = 'mp3/ld2.mp3';">ld2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ldd.png'; document.getElementById('myAudio').src = 'mp3/ldd.mp3';">ldd</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lddhs.png'; document.getElementById('myAudio').src = 'mp3/lddhs.mp3';">lddhs</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/le1.png'; document.getElementById('myAudio').src = 'mp3/le1.mp3';">le1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/le2.png'; document.getElementById('myAudio').src = 'mp3/le2.mp3';">le2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lf.png'; document.getElementById('myAudio').src = 'mp3/lf.mp3';">lf</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lhep.png'; document.getElementById('myAudio').src = 'mp3/lhep.mp3';">lhep</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lib.png'; document.getElementById('myAudio').src = 'mp3/lib.mp3';">lib</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lir.png'; document.getElementById('myAudio').src = 'mp3/lir.mp3';">lir</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lll.png'; document.getElementById('myAudio').src = 'mp3/lll.mp3';">lll</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lm.png'; document.getElementById('myAudio').src = 'mp3/lm.mp3';">lm</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lmr.png'; document.getElementById('myAudio').src = 'mp3/lmr.mp3';">lmr</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lmt.png'; document.getElementById('myAudio').src = 'mp3/lmt.mp3';">lmt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lne.png'; document.getElementById('myAudio').src = 'mp3/lne.mp3';">lne</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lp.png'; document.getElementById('myAudio').src = 'mp3/lp.mp3';">lp</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lpda.png'; document.getElementById('myAudio').src = 'mp3/lpda.mp3';">lpda</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ls1.png'; document.getElementById('myAudio').src = 'mp3/ls1.mp3';">ls1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lt.png'; document.getElementById('myAudio').src = 'mp3/lt.mp3';">lt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lver.png'; document.getElementById('myAudio').src = 'mp3/lver.mp3';">lver</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/lw.png'; document.getElementById('myAudio').src = 'mp3/lw.mp3';">lw</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/m1.png'; document.getElementById('myAudio').src = 'mp3/m1.mp3';">m1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/m2.png'; document.getElementById('myAudio').src = 'mp3/m2.mp3';">m2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/m3.png'; document.getElementById('myAudio').src = 'mp3/m3.mp3';">m3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/map.png'; document.getElementById('myAudio').src = 'mp3/map.mp3';">map</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/medt.png'; document.getElementById('myAudio').src = 'mp3/medt.mp3';">medt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/mf.png'; document.getElementById('myAudio').src = 'mp3/mf.mp3';">mf</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/mgt.png'; document.getElementById('myAudio').src = 'mp3/mgt.mp3';">mgt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/mh.png'; document.getElementById('myAudio').src = 'mp3/mh.mp3';">mh</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/mm1.png'; document.getElementById('myAudio').src = 'mp3/mm1.mp3';">mm1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/mm2.png'; document.getElementById('myAudio').src = 'mp3/mm2.mp3';">mm2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/mm3.png'; document.getElementById('myAudio').src = 'mp3/mm3.mp3';">mm3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/mr.png'; document.getElementById('myAudio').src = 'mp3/mr.mp3';">mr</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/mt.png'; document.getElementById('myAudio').src = 'mp3/mt.mp3';">mt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/mus.png'; document.getElementById('myAudio').src = 'mp3/mus.mp3';">mus</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/my.png'; document.getElementById('myAudio').src = 'mp3/my.mp3';">my</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/myaa.png'; document.getElementById('myAudio').src = 'mp3/myaa.mp3';">myaa</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/n1.png'; document.getElementById('myAudio').src = 'mp3/n1.mp3';">n1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/n2.png'; document.getElementById('myAudio').src = 'mp3/n2.mp3';">n2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nd1.png'; document.getElementById('myAudio').src = 'mp3/nd1.mp3';">nd1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nd2.png'; document.getElementById('myAudio').src = 'mp3/nd2.mp3';">nd2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nfue.png'; document.getElementById('myAudio').src = 'mp3/nfue.mp3';">nfue</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nkit.png'; document.getElementById('myAudio').src = 'mp3/nkit.mp3';">nkit</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nky.png'; document.getElementById('myAudio').src = 'mp3/nky.mp3';">nky</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nmc.png'; document.getElementById('myAudio').src = 'mp3/nmc.mp3';">nmc</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nmqp.png'; document.getElementById('myAudio').src = 'mp3/nmqp.mp3';">nmqp</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nnrb.png'; document.getElementById('myAudio').src = 'mp3/nnrb.mp3';">nnrb</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/npedt.png'; document.getElementById('myAudio').src = 'mp3/npedt.mp3';">npedt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/npvst.png'; document.getElementById('myAudio').src = 'mp3/npvst.mp3';">npvst</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nr.png'; document.getElementById('myAudio').src = 'mp3/nr.mp3';">nr</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nst.png'; document.getElementById('myAudio').src = 'mp3/nst.mp3';">nst</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/nvac.png'; document.getElementById('myAudio').src = 'mp3/nvac.mp3';">nvac</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ob.png'; document.getElementById('myAudio').src = 'mp3/ob.mp3';">ob</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/oct.png'; document.getElementById('myAudio').src = 'mp3/oct.mp3';">oct</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ol.png'; document.getElementById('myAudio').src = 'mp3/ol.mp3';">ol</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/oma.png'; document.getElementById('myAudio').src = 'mp3/oma.mp3';">oma</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/omn.png'; document.getElementById('myAudio').src = 'mp3/omn.mp3';">omn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/onvquf.png'; document.getElementById('myAudio').src = 'mp3/onvquf.mp3';">onvquf</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/otb.png'; document.getElementById('myAudio').src = 'mp3/otb.mp3';">otb</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ow.png'; document.getElementById('myAudio').src = 'mp3/ow.mp3';">ow</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/pebdlsr.png'; document.getElementById('myAudio').src = 'mp3/pebdlsr.mp3';">pebdlsr</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/pm1.png'; document.getElementById('myAudio').src = 'mp3/pm1.mp3';">pm1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/pm2.png'; document.getElementById('myAudio').src = 'mp3/pm2.mp3';">pm2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/pm3.png'; document.getElementById('myAudio').src = 'mp3/pm3.mp3';">pm3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/pte.png'; document.getElementById('myAudio').src = 'mp3/pte.mp3';">pte</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/q1.png'; document.getElementById('myAudio').src = 'mp3/q1.mp3';">q1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/qlmeb.png'; document.getElementById('myAudio').src = 'mp3/qlmeb.mp3';">qlmeb</button>
+
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/quc.png'; document.getElementById('myAudio').src = 'mp3/quc.mp3';">quc</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/r1.png'; document.getElementById('myAudio').src = 'mp3/r1.mp3';">r1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/r2.png'; document.getElementById('myAudio').src = 'mp3/r2.mp3';">r2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/r3.png'; document.getElementById('myAudio').src = 'mp3/r3.mp3';">r3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/rdr.png'; document.getElementById('myAudio').src = 'mp3/rdr.mp3';">rdr</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/res.png'; document.getElementById('myAudio').src = 'mp3/res.mp3';">res</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/rs.png'; document.getElementById('myAudio').src = 'mp3/rs.mp3';">rs</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/rw.png'; document.getElementById('myAudio').src = 'mp3/rw.mp3';">rw</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sbm.png'; document.getElementById('myAudio').src = 'mp3/sbm.mp3';">sbm</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sbupdc.png'; document.getElementById('myAudio').src = 'mp3/sbupdc.mp3';">sbupdc</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/scom.png'; document.getElementById('myAudio').src = 'mp3/scom.mp3';">scom</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sd.png'; document.getElementById('myAudio').src = 'mp3/sd.mp3';">sd</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sdl.png'; document.getElementById('myAudio').src = 'mp3/sdl.mp3';">sdl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sds.png'; document.getElementById('myAudio').src = 'mp3/sds.mp3';">sds</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sel.png'; document.getElementById('myAudio').src = 'mp3/sel.mp3';">sel</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/seqam.png'; document.getElementById('myAudio').src = 'mp3/seqam.mp3';">seqam</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sf1.png'; document.getElementById('myAudio').src = 'mp3/sf1.mp3';">sf1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sf2.png'; document.getElementById('myAudio').src = 'mp3/sf2.mp3';">sf2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sgh.png'; document.getElementById('myAudio').src = 'mp3/sgh.mp3';">sgh</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sgms.png'; document.getElementById('myAudio').src = 'mp3/sgms.mp3';">sgms</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sgtl.png'; document.getElementById('myAudio').src = 'mp3/sgtl.mp3';">sgtl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sl.png'; document.getElementById('myAudio').src = 'mp3/sl.mp3';">sl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sly.png'; document.getElementById('myAudio').src = 'mp3/sly.mp3';">sly</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sn.png'; document.getElementById('myAudio').src = 'mp3/sn.mp3';">sn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/so.png'; document.getElementById('myAudio').src = 'mp3/so.mp3';">so</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ss.png'; document.getElementById('myAudio').src = 'mp3/ss.mp3';">ss</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/stn.png'; document.getElementById('myAudio').src = 'mp3/stn.mp3';">stn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/stnsn.png'; document.getElementById('myAudio').src = 'mp3/stnsn.mp3';">stnsn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sue.png'; document.getElementById('myAudio').src = 'mp3/sue.mp3';">sue</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/sv.png'; document.getElementById('myAudio').src = 'mp3/sv.mp3';">sv</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/t1.png'; document.getElementById('myAudio').src = 'mp3/t1.mp3';">t1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/takoh.png'; document.getElementById('myAudio').src = 'mp3/takoh.mp3';">takoh</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tat.png'; document.getElementById('myAudio').src = 'mp3/tat.mp3';">tat</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tdotb.png'; document.getElementById('myAudio').src = 'mp3/tdotb.mp3';">tdotb</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tf.png'; document.getElementById('myAudio').src = 'mp3/tf.mp3';">tf</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tfc.png'; document.getElementById('myAudio').src = 'mp3/tfc.mp3';">tfc</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tfoth.png'; document.getElementById('myAudio').src = 'mp3/tfoth.mp3';">tfoth</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/thotrs.png'; document.getElementById('myAudio').src = 'mp3/thotrs.mp3';">thotrs</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tie.png'; document.getElementById('myAudio').src = 'mp3/tie.mp3';">tie</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/titn.png'; document.getElementById('myAudio').src = 'mp3/titn.mp3';">titn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tlb.png'; document.getElementById('myAudio').src = 'mp3/tlb.mp3';">tlb</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tlq.png'; document.getElementById('myAudio').src = 'mp3/tlq.mp3';">tlq</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tm.png'; document.getElementById('myAudio').src = 'mp3/tm.mp3';">tm</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tn.png'; document.getElementById('myAudio').src = 'mp3/tn.mp3';">tn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tog.png'; document.getElementById('myAudio').src = 'mp3/tog.mp3';">tog</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tpol.png'; document.getElementById('myAudio').src = 'mp3/tpol.mp3';">tpol</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tqt.png'; document.getElementById('myAudio').src = 'mp3/tqt.mp3';">tqt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tr1.png'; document.getElementById('myAudio').src = 'mp3/tr1.mp3';">tr1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tr2.png'; document.getElementById('myAudio').src = 'mp3/tr2.mp3';">tr2</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tr3.png'; document.getElementById('myAudio').src = 'mp3/tr3.mp3';">tr3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ts.png'; document.getElementById('myAudio').src = 'mp3/ts.mp3';">ts</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tst1.png'; document.getElementById('myAudio').src = 'mp3/tst1.mp3';">tst1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ttqd.png'; document.getElementById('myAudio').src = 'mp3/ttqd.mp3';">ttqd</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tvao.png'; document.getElementById('myAudio').src = 'mp3/tvao.mp3';">tvao</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/twtia.png'; document.getElementById('myAudio').src = 'mp3/twtia.mp3';">twtia</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/tyh.png'; document.getElementById('myAudio').src = 'mp3/tyh.mp3';">tyh</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/u1.png'; document.getElementById('myAudio').src = 'mp3/u1.mp3';">u1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/uaces.png'; document.getElementById('myAudio').src = 'mp3/uaces.mp3';">uaces</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ubyuf.png'; document.getElementById('myAudio').src = 'mp3/ubyuf.mp3';">ubyuf</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ucdp.png'; document.getElementById('myAudio').src = 'mp3/ucdp.mp3';">ucdp</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ueps.png'; document.getElementById('myAudio').src = 'mp3/ueps.mp3';">ueps</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/umh.png'; document.getElementById('myAudio').src = 'mp3/umh.mp3';">umh</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/v1.png'; document.getElementById('myAudio').src = 'mp3/v1.mp3';">v1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/vam.png'; document.getElementById('myAudio').src = 'mp3/vam.mp3';">vam</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/velp.png'; document.getElementById('myAudio').src = 'mp3/velp.mp3';">velp</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/vh.png'; document.getElementById('myAudio').src = 'mp3/vh.mp3';">vh</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/vol.png'; document.getElementById('myAudio').src = 'mp3/vol.mp3';">vol</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/vr80.png'; document.getElementById('myAudio').src = 'mp3/vr80.mp3';">vr80</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/vsa.png'; document.getElementById('myAudio').src = 'mp3/vsa.mp3';">vsa</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/vst.png'; document.getElementById('myAudio').src = 'mp3/vst.mp3';">vst</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/vv1.png'; document.getElementById('myAudio').src = 'mp3/vv1.mp3';">vv1</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/vv3.png'; document.getElementById('myAudio').src = 'mp3/vv3.mp3';">vv3</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/vvvem.png'; document.getElementById('myAudio').src = 'mp3/vvvem.mp3';">vvvem</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/wch.png'; document.getElementById('myAudio').src = 'mp3/wch.mp3';">wch</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/wmggw.png'; document.getElementById('myAudio').src = 'mp3/wmggw.mp3';">wmggw</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/wowy.png'; document.getElementById('myAudio').src = 'mp3/wowy.mp3';">wowy</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/wt.png'; document.getElementById('myAudio').src = 'mp3/wt.mp3';">wt</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/wtshnn.png'; document.getElementById('myAudio').src = 'mp3/wtshnn.mp3';">wtshnn</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/wy.png'; document.getElementById('myAudio').src = 'mp3/wy.mp3';">wy</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/wysnaa.png'; document.getElementById('myAudio').src = 'mp3/wysnaa.mp3';">wysnaa</button>
+
+      <hr>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/ycdm.png'; document.getElementById('myAudio').src = 'mp3/ycdm.mp3';">ycdm</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/yl.png'; document.getElementById('myAudio').src = 'mp3/yl.mp3';">yl</button>
+      
+      <button type="button" onclick="document.getElementById('myImage').src = 'png/chords/yntpll.png'; document.getElementById('myAudio').src = 'mp3/yntpll.mp3';">yntpll</button>
+    
+    </div>
+    <div id="center">
+        <img id="myImage" src="png/chords/a1.png"><br>
+        <audio id="myAudio" controls>
+          <source src="mp3/a1.mp3" type="audio/mpeg">
+        </audio> 
+    </div>
+  </div>
+
+  <footer>
+    <p>Una onza de practica vale tanto como una tonelada de teoria</p>
+  </footer>
+
+
+  
+
+</body>
+</html>
