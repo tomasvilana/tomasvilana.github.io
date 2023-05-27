@@ -58,7 +58,7 @@ body {
   display: block
 }
 
-#myMenu li a:hover {
+#myMenu li a:hover, .active {
   background-color: #eee;
 }
 
@@ -3591,8 +3591,14 @@ function myFunction() {
   filter = input.value.toUpperCase();
   ul = document.getElementById("myMenu");
   li = ul.getElementsByTagName("li");
+
+  
+
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
+
+    this.classList.toggle("active");
+
     if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
       li[i].style.display = "";
     } else {
